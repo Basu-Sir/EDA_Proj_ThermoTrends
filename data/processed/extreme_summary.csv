@@ -1,0 +1,13 @@
+city,total_days,total_hot_days,total_warm_nights,hot_day_pct,warm_night_pct
+Ahmedabad,9131,912,903,9.99,9.89
+Bengaluru,9131,907,910,9.93,9.97
+Chennai,9131,906,903,9.92,9.89
+Delhi,9131,911,912,9.98,9.99
+Guwahati,9131,910,910,9.97,9.97
+Hyderabad,9131,912,906,9.99,9.92
+Jaipur,9131,912,907,9.99,9.93
+Kochi,9131,904,899,9.9,9.85
+Kolkata,9131,911,907,9.98,9.93
+Lucknow,9131,914,910,10.01,9.97
+Mumbai,9131,911,909,9.98,9.96
+Srinagar,9131,908,911,9.94,9.98

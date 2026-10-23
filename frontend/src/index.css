@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-ivory: #F7F4EC;
+  --color-beige: #EDE6D8;
+  --color-warm-white: #FFFEFA;
+  --color-charcoal: #302F29;
+  --color-warm-gray: #77746B;
+  --color-forest: #355E48;
+  --color-sage: #9CAF88;
+  --color-terracotta: #C66A4A;
+  --color-taupe: #DCD5C8;
+  --color-forest-light: #4A7A5F;
+  --color-terracotta-light: #D4825F;
+  --font-serif: 'DM Serif Display', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+/* Base Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-charcoal);
+  background-color: var(--color-ivory);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Serif headings */
+h1,
+h2,
+h3 {
+  font-family: var(--font-serif);
+}
+
+/* Tabular figures for data */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Thin horizontal rules */
+hr {
+  border-color: var(--color-taupe);
+  border-width: 0.5px;
+}
+
+/* Section label styling */
+.section-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-forest);
+}
+
+/* Card styling */
+.card {
+  background-color: var(--color-warm-white);
+  border: 1px solid var(--color-taupe);
+  border-radius: 6px;
+}
+
+/* Warm alternate section */
+.section-alt {
+  background-color: var(--color-beige);
+}
+
+/* Recharts overrides for warm theme */
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+  stroke: var(--color-taupe);
+  stroke-opacity: 0.5;
+}
+
+.recharts-text {
+  font-family: var(--font-sans);
+  fill: var(--color-warm-gray);
+  font-size: 11px;
+}
+
+.recharts-tooltip-wrapper .recharts-default-tooltip {
+  background-color: var(--color-warm-white) !important;
+  border: 1px solid var(--color-taupe) !important;
+  border-radius: 6px !important;
+  box-shadow: 0 4px 12px rgba(48, 47, 41, 0.08) !important;
+  font-family: var(--font-sans) !important;
+  font-size: 12px !important;
+}
+
+/* Navigation */
+.nav-link {
+  position: relative;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-warm-gray);
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--color-forest);
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--color-forest);
+  border-radius: 1px;
+}
+
+/* Button styling */
+.btn-primary {
+  background-color: var(--color-forest);
+  color: white;
+  font-weight: 500;
+  font-size: 0.85rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-forest-light);
+}
+
+.btn-outline {
+  border: 1px solid var(--color-taupe);
+  color: var(--color-charcoal);
+  font-weight: 500;
+  font-size: 0.85rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+  background-color: transparent;
+}
+
+.btn-outline:hover {
+  border-color: var(--color-forest);
+  color: var(--color-forest);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-ivory);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-taupe);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-warm-gray);
+}
+
+/* Stat card styles */
+.stat-value {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Tooltip custom */
+.custom-tooltip {
+  background-color: var(--color-warm-white);
+  border: 1px solid var(--color-taupe);
+  border-radius: 6px;
+  padding: 10px 14px;
+  box-shadow: 0 4px 12px rgba(48, 47, 41, 0.1);
+}
+
+/* Animate entry */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Select/filter styling */
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%2377746B' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 0.5rem center;
+  background-repeat: no-repeat;
+  background-size: 1.5em 1.5em;
+  padding-right: 2.5rem;
+}

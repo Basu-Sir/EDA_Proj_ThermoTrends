@@ -1,0 +1,112 @@
+{
+  "cities": [
+    {
+      "name": "Delhi",
+      "latitude": 28.6139,
+      "longitude": 77.2090,
+      "region": "North",
+      "state": "Delhi",
+      "climate_zone": "Semi-arid",
+      "elevation_m": 216
+    },
+    {
+      "name": "Jaipur",
+      "latitude": 26.9124,
+      "longitude": 75.7873,
+      "region": "North-West",
+      "state": "Rajasthan",
+      "climate_zone": "Semi-arid",
+      "elevation_m": 431
+    },
+    {
+      "name": "Lucknow",
+      "latitude": 26.8467,
+      "longitude": 80.9462,
+      "region": "North",
+      "state": "Uttar Pradesh",
+      "climate_zone": "Humid subtropical",
+      "elevation_m": 123
+    },
+    {
+      "name": "Srinagar",
+      "latitude": 34.0837,
+      "longitude": 74.7973,
+      "region": "North",
+      "state": "Jammu & Kashmir",
+      "climate_zone": "Humid subtropical / Alpine",
+      "elevation_m": 1585
+    },
+    {
+      "name": "Mumbai",
+      "latitude": 19.0760,
+      "longitude": 72.8777,
+      "region": "West",
+      "state": "Maharashtra",
+      "climate_zone": "Tropical wet and dry",
+      "elevation_m": 14
+    },
+    {
+      "name": "Ahmedabad",
+      "latitude": 23.0225,
+      "longitude": 72.5714,
+      "region": "West",
+      "state": "Gujarat",
+      "climate_zone": "Semi-arid",
+      "elevation_m": 53
+    },
+    {
+      "name": "Chennai",
+      "latitude": 13.0827,
+      "longitude": 80.2707,
+      "region": "South",
+      "state": "Tamil Nadu",
+      "climate_zone": "Tropical wet and dry",
+      "elevation_m": 6
+    },
+    {
+      "name": "Bengaluru",
+      "latitude": 12.9716,
+      "longitude": 77.5946,
+      "region": "South",
+      "state": "Karnataka",
+      "climate_zone": "Tropical savanna",
+      "elevation_m": 920
+    },
+    {
+      "name": "Hyderabad",
+      "latitude": 17.3850,
+      "longitude": 78.4867,
+      "region": "South",
+      "state": "Telangana",
+      "climate_zone": "Tropical wet and dry",
+      "elevation_m": 542
+    },
+    {
+      "name": "Kochi",
+      "latitude": 9.9312,
+      "longitude": 76.2673,
+      "region": "South",
+      "state": "Kerala",
+      "climate_zone": "Tropical monsoon",
+      "elevation_m": 3
+    },
+    {
+      "name": "Kolkata",
+      "latitude": 22.5726,
+      "longitude": 88.3639,
+      "region": "East",
+      "state": "West Bengal",
+      "climate_zone": "Tropical wet and dry",
+      "elevation_m": 9
+    },
+    {
+      "name": "Guwahati",
+      "latitude": 26.1445,
+      "longitude": 91.7362,
+      "region": "North-East",
+      "state": "Assam",
+      "climate_zone": "Humid subtropical",
+      "elevation_m": 55
+    }
+  ]
+}

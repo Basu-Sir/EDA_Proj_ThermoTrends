@@ -1,0 +1,219 @@
+{
+  "study_period": "2001-2025",
+  "data_source": "NASA POWER Daily (T2M_MIN, T2M_MAX, T2M)",
+  "research_questions": [
+    {
+      "id": "rq1",
+      "question": "How have minimum, maximum, and mean temperatures changed over the study period (2001\u20132025)?",
+      "findings": [
+        {
+          "variable": "T2M_MIN",
+          "label": "Minimum Temperature",
+          "mean_slope_per_decade": 0.1221,
+          "cities_with_positive_trend": 9,
+          "cities_with_significant_trend": 3,
+          "total_cities": 12,
+          "strongest_trend_city": "Guwahati",
+          "strongest_trend_slope": 0.421,
+          "unit": "\u00b0C/decade"
+        },
+        {
+          "variable": "T2M_MAX",
+          "label": "Maximum Temperature",
+          "mean_slope_per_decade": -0.2518,
+          "cities_with_positive_trend": 4,
+          "cities_with_significant_trend": 6,
+          "total_cities": 12,
+          "strongest_trend_city": "Jaipur",
+          "strongest_trend_slope": -0.8194,
+          "unit": "\u00b0C/decade"
+        },
+        {
+          "variable": "T2M",
+          "label": "Mean Temperature",
+          "mean_slope_per_decade": -0.0487,
+          "cities_with_positive_trend": 6,
+          "cities_with_significant_trend": 5,
+          "total_cities": 12,
+          "strongest_trend_city": "Jaipur",
+          "strongest_trend_slope": -0.4676,
+          "unit": "\u00b0C/decade"
+        }
+      ]
+    },
+    {
+      "id": "rq2",
+      "question": "Do minimum and maximum temperatures exhibit different long-term trends?",
+      "findings": [
+        {
+          "cities_where_min_warming_faster": 12,
+          "total_cities": 12,
+          "comparison": [
+            {
+              "city": "Ahmedabad",
+              "min_ols_slope_decade": 0.0781,
+              "min_sens_slope_decade": 0.0592,
+              "max_ols_slope_decade": -0.5545,
+              "max_sens_slope_decade": -0.5015,
+              "ols_min_minus_max": 0.6326,
+              "min_warming_faster": true
+            },
+            {
+              "city": "Bengaluru",
+              "min_ols_slope_decade": 0.2382,
+              "min_sens_slope_decade": 0.2003,
+              "max_ols_slope_decade": 0.2054,
+              "max_sens_slope_decade": 0.2747,
+              "ols_min_minus_max": 0.0328,
+              "min_warming_faster": true
+            },
+            {
+              "city": "Chennai",
+              "min_ols_slope_decade": 0.1032,
+              "min_sens_slope_decade": 0.0683,
+              "max_ols_slope_decade": -0.0877,
+              "max_sens_slope_decade": -0.0355,
+              "ols_min_minus_max": 0.1909,
+              "min_warming_faster": true
+            },
+            {
+              "city": "Delhi",
+              "min_ols_slope_decade": -0.1314,
+              "min_sens_slope_decade": -0.0765,
+              "max_ols_slope_decade": -0.651,
+              "max_sens_slope_decade": -0.7144,
+              "ols_min_minus_max": 0.5196,
+              "min_warming_faster": true
+            },
+            {
+              "city": "Guwahati",
+              "min_ols_slope_decade": 0.421,
+              "min_sens_slope_decade": 0.3697,
+              "max_ols_slope_decade": 0.1799,
+              "max_sens_slope_decade": 0.1898,
+              "ols_min_minus_max": 0.2411,
+              "min_warming_faster": true
+            },
+            {
+              "city": "Hyderabad",
+              "min_ols_slope_decade": 0.0869,
+              "min_sens_slope_decade": 0.1422,
+              "max_ols_slope_decade": -0.2386,
+              "max_sens_slope_decade": -0.2113,
+              "ols_min_minus_max": 0.3255,
+              "min_warming_faster": true
+            },
+            {
+              "city": "Jaipur",
+              "min_ols_slope_decade": -0.1747,
+              "min_sens_slope_decade": -0.1392,
+              "max_ols_slope_decade": -0.8194,
+              "max_sens_slope_decade": -0.8162,
+              "ols_min_minus_max": 0.6447,
+              "min_warming_faster": true
+            },
+            {
+              "city": "Kochi",
+              "min_ols_slope_decade": 0.3496,
+              "min_sens_slope_decade": 0.35,
+              "max_ols_slope_decade": 0.2727,
+              "max_sens_slope_decade": 0.2996,
+              "ols_min_minus_max": 0.0769,
+              "min_warming_faster": true
+            },
+            {
+              "city": "Kolkata",
+              "min_ols_slope_decade": 0.167,
+              "min_sens_slope_decade": 0.1769,
+              "max_ols_slope_decade": 0.0774,
+              "max_sens_slope_decade": 0.0843,
+              "ols_min_minus_max": 0.0896,
+              "min_warming_faster": true
+            },
+            {
+              "city": "Lucknow",
+              "min_ols_slope_decade": -0.058,
+              "min_sens_slope_decade": -0.0663,
+              "max_ols_slope_decade": -0.5195,
+              "max_sens_slope_decade": -0.5094,
+              "ols_min_minus_max": 0.4615,
+              "min_warming_faster": true
+            },
+            {
+              "city": "Mumbai",
+              "min_ols_slope_decade": 0.1532,
+              "min_sens_slope_decade": 0.1808,
+              "max_ols_slope_decade": -0.161,
+              "max_sens_slope_decade": -0.1583,
+              "ols_min_minus_max": 0.3142,
+              "min_warming_faster": true
+            },
+            {
+              "city": "Srinagar",
+              "min_ols_slope_decade": 0.2327,
+              "min_sens_slope_decade": 0.2059,
+              "max_ols_slope_decade": -0.7254,
+              "max_sens_slope_decade": -0.7373,
+              "ols_min_minus_max": 0.9581,
+              "min_warming_faster": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rq3",
+      "question": "How do temperature distributions and seasonal patterns vary across cities?",
+      "findings": [
+        {
+          "warmest_city": "Chennai",
+          "warmest_mean": 27.93,
+          "coolest_city": "Srinagar",
+          "coolest_mean": 9.18,
+          "most_variable_city": "Srinagar",
+          "most_variable_std": 7.81,
+          "unit": "\u00b0C"
+        }
+      ]
+    },
+    {
+      "id": "rq4",
+      "question": "Is the Daily Temperature Range (DTR) increasing or decreasing?",
+      "findings": [
+        {
+          "mean_dtr_slope_per_decade": -0.374,
+          "cities_with_increasing_dtr": 0,
+          "cities_with_decreasing_dtr": 12,
+          "total_cities": 12,
+          "unit": "\u00b0C/decade",
+          "note": "Daily minimum temperature is not equivalent to mean nighttime temperature, and daily maximum temperature is not equivalent to mean daytime temperature."
+        }
+      ]
+    },
+    {
+      "id": "rq5",
+      "question": "How frequently do unusually hot days and warm nights occur, and are their frequencies changing?",
+      "findings": [
+        {
+          "city_with_most_hot_days": "Lucknow",
+          "avg_hot_days_per_year": 36.6,
+          "city_with_most_warm_nights": "Delhi",
+          "avg_warm_nights_per_year": 36.5,
+          "threshold_method": "City-specific calendar-month 90th percentile of full study period (2001-2025)"
+        }
+      ]
+    },
+    {
+      "id": "rq6",
+      "question": "How do data quality, missing observations, outliers, and methodological limitations affect interpretation?",
+      "findings": [
+        {
+          "total_expected_records": 109572,
+          "total_observed_records": 109572,
+          "overall_completeness_pct": 100.0,
+          "cities_analyzed": 12
+        }
+      ]
+    }
+  ]
+}

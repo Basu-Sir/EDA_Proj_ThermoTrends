@@ -1,0 +1,43 @@
+{
+  "study_period": {
+    "start_date": "2001-01-01",
+    "end_date": "2025-12-31",
+    "expected_daily_records_per_city": 9131
+  },
+  "nasa_power_api": {
+    "base_url": "https://power.larc.nasa.gov/api/temporal/daily/point",
+    "community": "RE",
+    "parameters": ["T2M_MIN", "T2M_MAX", "T2M"],
+    "output_format": "JSON",
+    "timeout_seconds": 60,
+    "max_retries": 5,
+    "initial_backoff_seconds": 2,
+    "rate_limit_delay_seconds": 1
+  },
+  "seasons": {
+    "Winter": [12, 1, 2],
+    "Pre-monsoon": [3, 4, 5],
+    "Monsoon": [6, 7, 8, 9],
+    "Post-monsoon": [10, 11]
+  },
+  "extreme_thresholds": {
+    "hot_day_percentile": 90,
+    "warm_night_percentile": 90,
+    "reference_period": {
+      "start_year": 2001,
+      "end_year": 2025,
+      "note": "Full study period used as reference since a conventional 30-year baseline is not available within 2001-2025."
+    }
+  },
+  "analysis": {
+    "confidence_level": 0.95,
+    "mean_tolerance_degC": 0.5,
+    "min_valid_years_for_trend": 15,
+    "mann_kendall_significance": 0.05
+  },
+  "output": {
+    "figure_dpi": 300,
+    "figure_format": "png",
+    "csv_encoding": "utf-8"
+  }
+}
